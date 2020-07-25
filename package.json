@@ -1,0 +1,7 @@
+{
+  "name": "monorepo-boirplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Felipe Freitas <felipe.samidare@hotmail.com> (http://gitshowcase.com/FelipeFreitas96)",
+  "license": "MIT"
+}
