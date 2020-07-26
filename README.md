@@ -1,8 +1,8 @@
 # MonoREPO
 
-* server-dev
-* test
-* test:verbose
-* test:unit
-* test:integration
-* test:coverage
+* yarn server-dev
+* yarn test
+* yarn test:verbose
+* yarn test:unit
+* yarn test:integration
+* yarn test:coverage
