@@ -4,6 +4,14 @@
     "module": "CommonJS",
     "target": "ES2019",
     "esModuleInterop": true,
-    "allowJs": true
-  } 
+    "allowJs": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "removeComments": true,
+    "paths": {
+      "@server/*": ["./packages/server/*"],
+      "@client/*": ["./packages/client/*"],
+      "@mobile/*": ["./packages/mobile/*"]
+    }
+  }
 }
