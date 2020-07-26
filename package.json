@@ -6,7 +6,8 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test:coverage"
     }
   },
   "workspaces": {
@@ -16,8 +17,12 @@
   },
   "scripts": {
     "server-dev": "ts-node packages/server/src/index.ts",
-    "test": "jest --coverage",
-    "test:staged": "jest --coverage"
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:verbose": "jest --passWithNoTests --runInBand",
+    "test:unit": "yarn test --config=jest-unit-config.js",
+    "test:integration": "yarn test --config=jest-integration-config.js",
+    "test:staged": "yarn test --findRelatedTests",
+    "test:coverage": "yarn test --coverage"
   },
   "author": "Felipe Freitas <felipe.samidare@hotmail.com> (http://gitshowcase.com/FelipeFreitas96)",
   "license": "MIT",
